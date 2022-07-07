@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>This is demo page</title>
+		<script>
+			function boxHide() {
+				console.log('Inside hid function');
+				var boxObj = document.getElementById("box1");
+				boxObj.style.display = "none";
+				
+			}
+			
+			function boxShow() {
+				console.log('Inside show function');
+				var boxObj = document.getElementById("box1");
+				boxObj.style.display = "block";
+			}
+		
+		</script>
+	</head>
+	<body>
+		
+		<button onclick="boxHide()">Hide</button><button onclick="boxShow()">Show</button>
+		<div id="box1" style="width:300px;height:400px;background-color:red;display:block"></div>
+	
+	</body>
+	
+
+</html>

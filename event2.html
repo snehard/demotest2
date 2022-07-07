@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>This is demo page</title>
+		<script>
+			function imgMouseOver() {
+				console.log("Inside over fucntion");
+				var imgObj = document.getElementById("img1");
+				imgObj.style.width = "400px";
+				imgObj.style.height = "400px";
+				imgObj.src = "https://tse3.mm.bing.net/th?id=OIP.ectSbKrc8tDC7gOB-RQdqgHaEK&pid=Api&P=0&w=600&h=400";
+				
+			}
+			
+			function imgMouseOut() {
+				console.log("Inside out fucntion");
+				var imgObj = document.getElementById("img1");
+				imgObj.style.width = "200px";
+				imgObj.style.height = "200px";
+				imgObj.src = "images/poster.png";
+			}
+		
+		</script>
+	</head>
+	<body>
+		<img id="img1" onmouseover="imgMouseOver()" onmouseout="imgMouseOut()" src="images/poster.png" style="width:200px;height:200px;border:1px solid #000;" />
+		
+		
+	</body>
+	
+
+</html>

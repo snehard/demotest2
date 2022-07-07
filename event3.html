@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>This is demo page</title>
+		<script>
+			function textFocus() {
+				console.log("Inside focus fucntion")
+				var fnameObj = document.getElementById("fname");
+				var fnameValue = fnameObj.value;
+				console.log(fnameValue);
+				
+				if(fnameValue == "Please enter First name") {
+					fnameObj.value = "";
+				}
+			}
+			function textBlur(firstNObj) {
+			    var fnameValue = firstNObj.value;
+				console.log(fnameValue)
+				if(fnameValue == "") {
+					firstNObj.value = "Please enter First name";
+				}
+				
+			}
+		
+		</script>
+	</head>
+	<body>
+		<input id="fname" onfocus="textFocus()" onblur="textBlur(this)"  type="text" name="fname" value="Please enter First name" />
+		
+	</body>
+	
+
+</html>
